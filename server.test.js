@@ -18,6 +18,6 @@ it('Call the / endpoint', async done => {
 it('Call the /greet endpoint', async done => {
     const res = await request.get('/greet')
     expect(res.status).toBe(200)
-    expect(res.text).toBe('Hello!')
+    expect(res.text).toBe('Hi!')
     done()
 })
