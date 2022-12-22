@@ -21,3 +21,9 @@ it('Call the /greet endpoint', async done => {
     expect(res.text).toBe('Heyoo!')
     done()
 })
+it('Call the /update endpoint', async done => {
+    const res = await request.get('/update')
+    expect(res.status).toBe(200)
+    expect(res.text).toBe('This page is already updated!')
+    done()
+})
